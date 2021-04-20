@@ -1,0 +1,34 @@
+1. Consultar clientes:
+curl --location --request GET 'localhost:8080/api/customer'
+
+
+2. Consultar un cliente:
+curl --location --request GET 'localhost:8080/api/customer/1'
+
+
+3. Eliminar un cliente:
+curl --location --request DELETE 'localhost:8080/api/customer/1'
+
+
+4. Crear un cliente:
+curl --location --request POST 'localhost:8080/api/customer' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "customerProfile": {
+        "userId": 3,
+        "countryId": 1,
+        "first_name": "Nombre3",
+        "last_name": "Apellido3",
+        "curp": "curp3",
+        "rfc": "rfc3",
+        "gener": "f",
+        "nationalityId": 2
+    }
+}'
+
+5. Actualizar el rfc de un cliente
+curl --location --request PATCH 'localhost:8080/api/customer/2' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "rfc": "QWER123456L0L"
+}'
