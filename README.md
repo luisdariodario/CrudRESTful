@@ -24,8 +24,8 @@ Se requiere tener instalado lo siguiente:
 - JDK 8 [Download](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 
 **Configuracion**
-- Para maven se tiene que agregar al path de el directorio <directorio maven>/bin
-- Para java <instalacion java>/jdk1.8.0_281/bin
+- Para maven se tiene que agregar al path de el directorio (directorio maven)/bin
+- Para java (instalacion java)/jdk1.8.0_281/bin
 
 El proyecto esta contruido usando el empaquetardor MAVEN, es un proyecto que usa spring boot y fue construido por medio de Spring Tool Suit el cual utiliza [Spring Initializr](https://start.spring.io) por lo cual para ejecutarlo basta con entrar al directorio del proyecto y ejecutar en linea de comandos:
 > `mvn spring-boot:run`
